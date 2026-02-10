@@ -50,7 +50,7 @@ p {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 36px;
+    font-size: 26px;
   }
 
   h2 {
@@ -1209,3 +1209,4 @@ Mobile code
 .nav-menu.active {
   display: block;
 }
+
