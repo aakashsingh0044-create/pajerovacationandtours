@@ -1162,7 +1162,7 @@ Mobile code
 }
 
 .footer-image img {
-  width: 80px;
+  width: 40px;
   border-radius: 10px;
  
 }
@@ -1214,5 +1214,6 @@ Mobile code
 .nav-menu.active {
   display: block;
 }
+
 
 
