@@ -19,7 +19,6 @@
   }
 }
 
-
 body {
     font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -65,8 +64,7 @@ p {
 
 @media (max-width: 768px) {
   h1 {
-    font-size:26px;
-      line-height: 1.0;
+    font-size:36px;
   }
 
   h2 {
@@ -1237,6 +1235,4 @@ Mobile code
 html {
   scroll-behavior: smooth;
 }
-
-
 
