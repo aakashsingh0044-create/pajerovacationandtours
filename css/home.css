@@ -6,6 +6,20 @@
 
 }
 
+/* Desktop default styles */
+
+.container {
+  display: flex;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+
 body {
     font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -1221,3 +1235,4 @@ Mobile code
 html {
   scroll-behavior: smooth;
 }
+
