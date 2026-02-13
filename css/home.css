@@ -30,6 +30,7 @@ h1 {
   font-size: 56px;
   font-weight: 700;
   color:#f15a24;
+  line-height: 1.0;
    
 }
 
@@ -1235,4 +1236,5 @@ Mobile code
 html {
   scroll-behavior: smooth;
 }
+
 
