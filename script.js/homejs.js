@@ -52,6 +52,40 @@ window.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", revealSteps);
   revealSteps();
 
+    /* =================How we work  ================= */
+
+const elements = document.querySelectorAll('.how-text, .how-image');
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+},{ threshold:0.3 });
+
+elements.forEach(el=>{
+  observer.observe(el);
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+
+  /* ================= STEP ANIMATION ================= */
+
+  const steps = document.querySelectorAll(".hiw-step");
+
+  function revealSteps() {
+    steps.forEach(step => {
+      const top = step.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) {
+        step.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealSteps);
+  revealSteps();
+
 
   /* ================= IMAGE SLIDER (FIXED) ================= */
 
@@ -83,6 +117,7 @@ const navLinks = document.querySelector(".nav-links");
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
 
 
 
