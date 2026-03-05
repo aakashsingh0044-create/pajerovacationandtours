@@ -381,6 +381,53 @@ Mobile code
   }
 }
 
+
+/* =========================
+   tRUSTED PARTNERS (SIMPLE)
+========================= */
+
+.partners {
+  padding: 20PX 20px;
+  background: #f7f9fb;
+  text-align: center;
+}
+
+.partners h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #062c3f;
+}
+
+.partners-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.partners-track {
+  display: flex;
+  gap: 80px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.partners-track img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* KEY PART */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
 /* =========================
    FEATURED TOURS
 ========================= */
@@ -980,51 +1027,6 @@ Mobile code
 
 
 
-/* =========================
-   tRUSTED PARTNERS (SIMPLE)
-========================= */
-
-.partners {
-  padding: 20PX 20px;
-  background: #f7f9fb;
-  text-align: center;
-}
-
-.partners h3 {
-  font-size: 28px;
-  margin-bottom: 40px;
-  color: #062c3f;
-}
-
-.partners-slider {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.partners-track {
-  display: flex;
-  gap: 80px;
-  width: max-content;
-  animation: scroll 20s linear infinite;
-}
-
-.partners-track img {
-  height: 60px;
-  width: auto;
-  object-fit: contain;
-}
-
-/* KEY PART */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
 
 
 /* =========================
@@ -1319,5 +1321,6 @@ Mobile code
 html {
   scroll-behavior: smooth;
 }
+
 
 
