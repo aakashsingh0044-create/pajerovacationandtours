@@ -30,44 +30,7 @@ dots.forEach((dot, i) => {
   });
 });
 
-
-/* ================= How We WOrk ================= */
-
-const elements = document.querySelectorAll('.how-text, .how-image');
-
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-    }
-  });
-},{ threshold:0.3 });
-
-elements.forEach(el=>{
-  observer.observe(el);
-});
-
-
-
-window.addEventListener("DOMContentLoaded", () => {
-
-  /* ================= STEP ANIMATION ================= */
-
-  const steps = document.querySelectorAll(".hiw-step");
-
-  function revealSteps() {
-    steps.forEach(step => {
-      const top = step.getBoundingClientRect().top;
-      if (top < window.innerHeight - 100) {
-        step.classList.add("show");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", revealSteps);
-  revealSteps();
-
-    /* =================How we work  ================= */
+  /* =================How we work  ================= */
 
 const elements = document.querySelectorAll('.how-text, .how-image');
 
@@ -126,16 +89,28 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
 
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+  const links = document.querySelectorAll(".nav-links a");
+
+  hamburger.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+  });
+
+  links.forEach(link => {
+    link.addEventListener("click", function () {
+      navLinks.classList.remove("active");
+    });
+  });
+
 });
-
-
-
-
-
-
-
