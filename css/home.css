@@ -108,7 +108,7 @@ a {
   left: 0;
 }
 
-  /* wAVE DESIGN  */
+  /* WAVE DESIGN  */
 
 /* WAVE */
 .hero-wave {
@@ -296,7 +296,88 @@ Mobile code
   }
 }
 
+/* =========================
+   How We Work
+========================= */
 
+
+/* SECTION */
+.how-we-work{
+  padding:100px 8%;
+  background:#f8f8f8;
+}
+
+/* CONTAINER */
+.how-container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+/* TEXT SIDE */
+.how-text h2{
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.how-text p{
+  font-size:17px;
+  line-height:1.7;
+  margin-bottom:30px;
+  color:#555;
+}
+
+/* BUTTON */
+.how-btn{
+  display:inline-block;
+  padding:14px 30px;
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:500;
+  transition:all .3s ease;
+}
+
+.how-btn:hover{
+  background:#333;
+  transform:translateY(-2px);
+}
+
+/* IMAGE */
+.how-image img{
+  width:100%;
+  border-radius:12px;
+  object-fit:cover;
+}
+
+/* ANIMATION DEFAULT */
+.how-text,
+.how-image{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all .8s ease;
+}
+
+.how-text.show,
+.how-image.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+  .how-container{
+    grid-template-columns:1fr;
+  }
+
+  .how-image{
+    order:-1;
+  }
+
+}
 
 /* =========================
    WHY US
@@ -380,53 +461,6 @@ Mobile code
     font-size: 32px;
   }
 }
-
-
-/* =========================
-   tRUSTED PARTNERS (SIMPLE)
-========================= */
-
-.partners {
-  padding: 20PX 20px;
-  background: #f7f9fb;
-  text-align: center;
-}
-
-.partners h3 {
-  font-size: 28px;
-  margin-bottom: 40px;
-  color: #062c3f;
-}
-
-.partners-slider {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.partners-track {
-  display: flex;
-  gap: 80px;
-  width: max-content;
-  animation: scroll 20s linear infinite;
-}
-
-.partners-track img {
-  height: 60px;
-  width: auto;
-  object-fit: contain;
-}
-
-/* KEY PART */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
 
 /* =========================
    FEATURED TOURS
@@ -567,6 +601,17 @@ Mobile code
   .ft-card{
     margin: 0 10px;
   }
+}
+
+
+/* =========================
+   How it work section 
+========================= */
+
+
+.how-it-works{
+
+  display: flexbox;
 }
 
 
@@ -945,6 +990,51 @@ Mobile code
 
 
 
+/* =========================
+   tRUSTED PARTNERS (SIMPLE)
+========================= */
+
+.partners {
+  padding: 20PX 20px;
+  background: #f7f9fb;
+  text-align: center;
+}
+
+.partners h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #062c3f;
+}
+
+.partners-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.partners-track {
+  display: flex;
+  gap: 80px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.partners-track img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* KEY PART */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 
 
 /* =========================
@@ -1123,6 +1213,24 @@ Mobile code
   }
 }
 
+/* =========================
+Music
+========================= */
+.music-section {
+  background-color: #f9f9f9;
+  padding: 15px;
+  text-align: center;
+  display: inline-block; /* makes it float in content */
+  border-radius: 8px;
+  margin: 20px auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.music-section audio {
+  width: 100%;
+  max-width: 400px; /* optional */
+}
+
+
 
 /* =========================
    FOOTER
@@ -1242,5 +1350,35 @@ html {
 
 
 
+/* Common styling for floaters */
+/* Common styling for floating buttons */
+.floater {
+  position: fixed;
+  padding: 14px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  text-decoration: none;
+  transition: transform 0.2s;
+}
 
+.floater:hover {
+  transform: scale(1.2);
+}
 
+/* Phone at bottom-left */
+.floater.phone {
+  bottom: 20px;
+  left: 20px;
+  background-color: #007BFF;
+}
+
+/* WhatsApp at bottom-right */
+.floater.whatsapp {
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+}
