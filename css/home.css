@@ -570,88 +570,6 @@ Mobile code
 }
 
 
-/* =========================
-   How We Work
-========================= */
-
-
-/* SECTION */
-.how-we-work{
-  padding:100px 8%;
-  background:#f8f8f8;
-}
-
-/* CONTAINER */
-.how-container{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:60px;
-  align-items:center;
-}
-
-/* TEXT SIDE */
-.how-text h2{
-  font-size:42px;
-  margin-bottom:20px;
-}
-
-.how-text p{
-  font-size:17px;
-  line-height:1.7;
-  margin-bottom:30px;
-  color:#555;
-}
-
-/* BUTTON */
-.how-btn{
-  display:inline-block;
-  padding:14px 30px;
-  background:#111;
-  color:#fff;
-  text-decoration:none;
-  border-radius:6px;
-  font-weight:500;
-  transition:all .3s ease;
-}
-
-.how-btn:hover{
-  background:#333;
-  transform:translateY(-2px);
-}
-
-/* IMAGE */
-.how-image img{
-  width:100%;
-  border-radius:12px;
-  object-fit:cover;
-}
-
-/* ANIMATION DEFAULT */
-.how-text,
-.how-image{
-  opacity:0;
-  transform:translateY(40px);
-  transition:all .8s ease;
-}
-
-.how-text.show,
-.how-image.show{
-  opacity:1;
-  transform:translateY(0);
-}
-
-/* MOBILE */
-@media(max-width:900px){
-
-  .how-container{
-    grid-template-columns:1fr;
-  }
-
-  .how-image{
-    order:-1;
-  }
-
-}
 
 /* =========================
    FEATURED TOURS 2
@@ -1321,6 +1239,7 @@ Mobile code
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
