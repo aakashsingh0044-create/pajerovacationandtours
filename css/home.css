@@ -89,10 +89,6 @@ a {
     url('her0-image.jpg') center/cover no-repeat;
   position: relative;
   color: #fff;
-}
-
-
-.hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
@@ -864,10 +860,7 @@ Mobile code
 ========================= */
 
 
-.how-it-works{
 
-  display: flexbox;
-}
 
 
 
@@ -1157,6 +1150,7 @@ Mobile code
 }
 
 .how-it-works {
+    display:flex;
   padding: 100px 40px;
 }
 
